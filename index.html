@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Miss. Janvii Jii...>3🌸</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe4e1, #e6e6fa); /* Pastel pink to lavender */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 800px;
+            animation: slideUp 1s ease-in-out;
+        }
+        .message {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .reasons, .memories {
+            margin: 40px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px auto;
+            padding: 10px;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        li:hover {
+            transform: scale(1.05);
+        }
+        .gifs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .gifs img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: bounce 2s infinite;
+        }
+        .joke {
+            font-style: italic;
+            color: #ff69b4;
+            margin: 20px 0;
+        }
+        .from {
+            font-size: 1.5em;
+            color: #ff1493;
+            margin-top: 40px;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        /* Confetti */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            p { font-size: 1em; }
+            .gifs img { width: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="confetti"></canvas>
+    <h1>🌸💖 Happy Birthday, Miss. Janvii Jii...>3🌸! 💖🌸</h1>
+    <p class="birthday-date">Turning 17 on 23 October 2025 🎉</p>
+    <div class="message">
+        <p>🌸💖 Happy Birthday My Jannu! 💖🌸</p>
+        <p>Today is the most special day of the year, because it’s the day my Jannu came into this world. And honestly, I thank God every single day for blessing me with you. You’re not just my girlfriend — you are my happiness, my peace, my strength, and the most precious part of my life.</p>
+        <p>Jannu, it’s been one year of our journey together, and even though we haven’t met in person yet, you’ve given me the most real and pure love anyone could ever ask for. The way you understand me without me even saying a word, the way you care for me, the way you always manage to bring a smile to my face no matter how bad my day is — these things make me fall in love with you over and over again.</p>
+        <p>I know your parents are strict and we haven’t had the chance to meet yet, but that doesn’t change a thing. Because love isn’t about just meeting or holding hands, love is about connection — and the bond we share is unbreakable. One day, Jannu, I promise we’ll finally meet, and when that day comes, I’ll hold your hand so tight that you’ll never feel the distance again.</p>
+        <p>On your birthday today, I just want to tell you how proud I am to have you in my life. You are loyal, caring, innocent, sweet, and everything I ever dreamed of in a partner. I truly don’t need to see you to know how beautiful you are — because your heart already shows me your true beauty.</p>
+        <p>May this birthday bring you endless joy, laughter, and success in everything you do. May your smile always shine brighter than the stars. May you get all the happiness you’ve ever dreamed of, and may I always be the reason behind that happiness.</p>
+        <p>Jannu, you are my world, my forever girl, my best friend, and my one true love. On your special day, I just want to promise you again — no matter what happens, I will always be by your side, I will always love you, and I will never let you feel alone.</p>
+        <p>So here’s to you, my sweetest Jannu — the girl who owns my heart completely. Happiest Birthday once again, my love! 🥳🎂💖 May this be the most magical year of your life, and may every birthday from now on be celebrated together, side by side.</p>
+        <p>I love you endlessly, Jannu ❤️</p>
+    </div>
+    <div class="reasons">
+        <h2>💕 Reasons Why I Love You 💕</h2>
+        <ul>
+            <li>You are the most beautiful part of my life – even though we haven’t met yet, your presence completes me.</li>
+            <li>You are both my best friend and my love – I can share anything with you without fear.</li>
+            <li>Your words always make me smile – even the most boring days become special when I talk to you.</li>
+            <li>You understand me without me even saying anything – it feels like you can read my heart.</li>
+            <li>You always motivate me – whenever I feel low, your words lift me up.</li>
+            <li>Your innocence and simplicity attract me the most – even without seeing you, I feel your soul.</li>
+            <li>This one year with you feels like a beautiful story – and I want this story to continue forever.</li>
+            <li>I can’t imagine my day without you – you’ve become my sweetest habit.</li>
+            <li>You make me a better person – because of you, I always try to be the best version of myself.</li>
+            <li>I feel proud of you – proud that I have such a loyal, caring, and loving girl in my life.</li>
+        </ul>
+    </div>
+    <div class="memories">
+        <h2>🌟 Special Moments 🌟</h2>
+        <ul>
+            <li>Our playful fights when you used to scold or hit me, which now feel so precious.</li>
+            <li>The rare times we meet, which always feel extra special and unforgettable.</li>
+            <li>The way you always support and motivate me, no matter the distance.</li>
+        </ul>
+    </div>
+    <div class="gifs">
+        <img src="https://gifdb.com/images/high/cute-poke-love-couple-0kocsddct79b0tw0.gif" alt="Cute GIF 1">
+        <img src="https://i.pinimg.com/originals/06/fe/4f/06fe4f05c2946c284a8049bf9c1cda21.gif" alt="Cute GIF 2">
+        <img src="https://media1.tenor.com/images/27ad7522e1cd897939fcde0570262e16/tenor.gif?itemid=16728925" alt="Cute GIF 3">
+    </div>
+    <p class="joke">Just promise me ek baat — iss saal tum mujhe ignore karke phir late reply dena thoda kam karogi 😂❤️??</p>
+    <p class="from">From Your Kittu...>3 ❤️</p>
+    <!-- Optional background music: Uncomment and replace src with a free romantic song URL, e.g., from YouTube audio or free sound sites -->
+    <!-- <audio autoplay loop>
+        <source src="https://example.com/romantic-song.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <script>
+        // Simple confetti using canvas
+        const canvas = document.getElementById('confetti');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const confetti = [];
+        const colors = ['#ff69b4', '#ffb6c1', '#e6e6fa', '#ff1493'];
+
+        function createConfetti() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - canvas.height,
+                size: Math.random() * 5 + 5,
+                speed: Math.random() * 3 + 2,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                rotation: Math.random() * 360,
+                rotationSpeed: Math.random() * 10 - 5
+            };
+        }
+
+        for (let i = 0; i < 100; i++) {
+            confetti.push(createConfetti());
+        }
+
+        function drawConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            confetti.forEach(c => {
+                ctx.save();
+                ctx.translate(c.x, c.y);
+                ctx.rotate(c.rotation * Math.PI / 180);
+                ctx.fillStyle = c.color;
+                ctx.fillRect(-c.size / 2, -c.size / 2, c.size, c.size);
+                ctx.restore();
+
+                c.y += c.speed;
+                c.rotation += c.rotationSpeed;
+
+                if (c.y > canvas.height) {
+                    Object.assign(c, createConfetti());
+                }
+            });
+            requestAnimationFrame(drawConfetti);
+        }
+
+        drawConfetti();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
